@@ -1,0 +1,11 @@
+# cat=basic/enable; type=boolean; label=CType Multimedia: Enable original file field for the content type "Multimedia" as second multimedia field.
+ctype_multimedia_add_orig_field = 0
+
+# cat=basic/enable; type=boolean; label=Enable this extension to obtain the width and height from DAM database.
+enable_get_wh = 1
+
+TSConstantEditor.basic { 
+  description = <span style="background:red; padding:1px 2px; color:#fff; font-weight:bold;">1</span> If you set this option the new DAM field will not override the original multimedia field but it will be placed after the multimedia field and user cann choose which field to use. But the Multimedia element works with only one file and so if you select file in both fields - the DAM field will be chosen.<br/><br/><span style="background:red; padding:1px 2px; color:#fff; font-weight:bold;">2</span> With this option you can enable to get the width and height of the multimedia file from the DAM database. If you have stored width or height to the multimedia file, this extension is able to use this values. You can set fields from tx_dam table in which the width or height values are stored width this typoscript:<br/><br/><em>tt_content.multimedia.20.params.cObject.damWidth=<br>tt_content.multimedia.20.params.cObject.damHeight=</em><br/><br/>Default values are: <br/><br/><em>...damWidth=vpixels,width<br/>...damHeight=hpixels,height</em><br/><br/>If you set more then one field(e.g. "...damWidth=vpixels,height,height2"), then the last not empty field is used. <br/>If user enter a height or width value in TYPO3 backend->multimedia element->parameter field (e.g. "width=100") then this value is used.
+  1=ctype_multimedia_add_orig_field
+  2=enable_get_wh
+}

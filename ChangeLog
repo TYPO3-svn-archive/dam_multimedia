@@ -1,0 +1,21 @@
+02-01-06 Juraj Sulek  <juraj@sulek.sk>
+	0.2.4	- typoscript editIcons configuration added(thx. to Michael Ablass)
+
+	0.2.3	- php,php3 deleted from disallowed.
+
+	0.2.2	- bug repaired
+
+	0.2.1	- test upload to TER2
+
+	0.2.0	- manual added
+			- icon added	
+
+	0.1.1 	- description updated, option enable_get_wh added
+
+	0.1.0 	- width and height property added
+
+	0.0.3 	- Original field cann be enabled as second field
+
+	0.0.2 	- bug repair
+
+	* Initial release
